@@ -1,0 +1,151 @@
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+
+/* NAVBAR MOBILE RESPONSIVE */
+@media (max-width: 992px) {
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -45%;
+        transition: all 0.2s ease;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        height: auto;
+        width: 45%;
+        transition: left 0.35s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+        padding: 40px;
+        z-index: 1;
+    }
+}
+/* NAVBAR DESKTOP */
+.nav .navbar .navbar-nav a {
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .7px;
+    padding: 0 12px;
+    transition: .3s;
+}
+.nav .navbar .navbar-nav a:hover {
+    color: #04009a;
+    transition: .3s;
+}
+.nav-login .btn-navbar {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    margin-left: 28px;
+    padding: 12px 28px !important;
+    position: relative;
+    z-index : 1;
+    transition: .3s;
+    border-radius: 12px;
+}
+.nav-login .btn-navbar:before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    width   : 50%;  /* or 100px */
+    border-bottom:2px solid #0053f6;
+  }
+.nav .navbar .navbar-nav .btn-navbar i {
+    font-size: 14px;
+}
+.nav-login .btn-navbar:hover {
+    background-color: #0053f6;
+    color: #fff !important;
+    text-decoration: none;
+    transition: .3s;
+}
+/* NAV CATEGORIES */
+.nav-categories {
+    margin-top: 20px;
+}
+.bc-nav {
+    padding: 0 80px;
+}
+.nav-categories li a {
+    color: #000 !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 6px;
+}
+.nav-categories li a:hover {
+    color: #04009a !important;
+    transition: .3s;
+}
+.nav-categories .btn-category {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: .3s;
+}
+.nav-categories .btn-category:hover {
+    background-color: #e4e4e4;
+   
+    text-decoration: none;
+    transition: .3s;
+}
+.nav-categories .btn-category i {
+    font-size: 13px;
+    margin-right: 12px;
+}
+/* Hero Section */
+.hero .jumbotron {
+    background-color: #fff;
+}
+.hero .jumbotron .display-4 {
+    margin-top: 15px;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: .9px;
+    margin-bottom: 30px;
+}
+.hero .jumbotron p {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.hero .jumbotron .btn-custom-danger {
+    font-size: 16px;
+    padding: 10px 24px;
+    background-color: #e5165c;
+    border-color: #e5165c;
+    color: #fff;
+}
+.hero .jumbotron .btn-custom-danger:hover {
+    background-color: #c51550 ;
+    border-color: #c51550;
+}
+.hero .jumbotron .btn-custom-primary {
+    font-size: 16px;
+    padding: 10px 24px;
+    background-color: #0071ff;
+    border-color: #0071ff;
+    color: #fff;
+}
+.hero .jumbotron .btn-custom-primary:hover {
+    background-color: #2660a7;
+    border-color: #2660a7;
+}
